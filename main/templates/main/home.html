@@ -5,7 +5,7 @@
 <section class="hero">
   <h1>Planteer</h1>
   <p>Plant Database For Plants Lovers</p>
-  <form class="search-form" action="#" method="get">
+  <form class="search-form" action="{% url 'plants:search' %}" method="get">
     <input type="text" name="q" placeholder="Search For Plant...">
     <button type="submit">Search</button>
   </form>
@@ -21,7 +21,7 @@
 
 <div class="plants-grid">
   {% for plant in plants %}
-  <a href="#" class="card">
+    <a href="{% url 'plants:plant_detail' plant.id %}" class="card">
     <img src="{{ plant.image.url }}" alt="{{ plant.name }}">
     <h3>{{ plant.name }}</h3>
     <p>{{ plant.about|truncatechars:60 }}</p>

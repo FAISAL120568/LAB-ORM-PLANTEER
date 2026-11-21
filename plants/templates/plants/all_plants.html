@@ -25,8 +25,8 @@
 
 <div class="plants-grid">
   {% for plant in plants %}
-  <a href="#" class="card">
-    <img src="{{ plant.image.url }}" alt="{{ plant.name }}">
+     <a href="{% url 'plants:plant_detail' plant.id %}" class="card">
+     <img src="{{ plant.image.url }}" alt="{{ plant.name }}">
     <h3>{{ plant.name }}</h3>
     <p>{{ plant.about|truncatechars:60 }}</p>
     <span class="cat">{{ plant.get_category_display }}</span>
