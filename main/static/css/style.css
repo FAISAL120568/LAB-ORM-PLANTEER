@@ -1,4 +1,3 @@
-/* ===== عام ===== */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
@@ -14,7 +13,6 @@ body {
 a { color: inherit; text-decoration: none; }
 main { flex: 1; width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 40px 64px; }
 
-/* ===== الأزرار ===== */
 .btn, button {
   display: inline-block;
   background: #111;
@@ -30,7 +28,6 @@ main { flex: 1; width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 40px 
 .btn-outline { background: #fff; color: #111; border: 1px solid #d9d9d9; }
 .btn-outline:hover { background: #f3f3f3; }
 
-/* ===== Navbar ===== */
 .navbar {
   max-width: 1200px; width: 100%; margin: 0 auto;
   padding: 28px 40px;
@@ -40,7 +37,6 @@ main { flex: 1; width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 40px 
 .navbar nav { display: flex; align-items: center; gap: 28px; }
 .navbar nav a:not(.btn):hover { text-decoration: underline; }
 
-/* ===== Hero ===== */
 .hero {
   min-height: 380px;
   display: flex; flex-direction: column; align-items: center; justify-content: center;
@@ -50,7 +46,6 @@ main { flex: 1; width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 40px 
 .hero h1 { font-size: 64px; line-height: 1.05; }
 .hero p { font-size: 32px; font-weight: 600; }
 
-/* ===== الفورمات ===== */
 .search-form { display: flex; gap: 8px; width: 100%; max-width: 560px; }
 .search-form input { flex: 1; }
 
@@ -66,7 +61,6 @@ textarea { resize: vertical; }
 .form { display: flex; flex-direction: column; gap: 12px; max-width: 520px; }
 .form label { font-size: 14px; font-weight: 600; }
 
-/* ===== عناوين الأقسام ===== */
 .section-head {
   display: flex; justify-content: space-between; align-items: flex-end;
   margin: 48px 0 24px;
@@ -76,7 +70,6 @@ textarea { resize: vertical; }
 .page-title { font-size: 32px; margin: 16px 0 6px; }
 .page-sub { font-size: 14px; color: #6b6b6b; margin-bottom: 28px; }
 
-/* ===== Cards ===== */
 .plants-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -92,7 +85,6 @@ textarea { resize: vertical; }
 .card p { font-size: 13px; color: #6b6b6b; }
 .card .cat { font-size: 13px; font-weight: 600; }
 
-/* ===== Filters ===== */
 .filters { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 32px; }
 .filters a {
   padding: 8px 16px; border-radius: 999px;
@@ -100,7 +92,7 @@ textarea { resize: vertical; }
 }
 .filters a.active, .filters a:hover { background: #111; color: #fff; border-color: #111; }
 
-/* ===== Plant Detail ===== */
+
 .detail { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; margin-top: 16px; }
 .detail img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 2px; }
 .detail-info { display: flex; flex-direction: column; gap: 14px; }
@@ -109,7 +101,7 @@ textarea { resize: vertical; }
 .detail-info p { font-size: 14px; color: #444; }
 .actions { display: flex; gap: 10px; margin-top: 8px; }
 
-/* ===== Comments ===== */
+
 .comments { margin-top: 56px; max-width: 640px; }
 .comments h2 { font-size: 22px; margin-bottom: 16px; }
 .comment-form { display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; }
@@ -119,7 +111,7 @@ textarea { resize: vertical; }
 .comment small { display: block; font-size: 12px; color: #6b6b6b; margin: 2px 0 6px; }
 .comment p { font-size: 14px; color: #444; }
 
-/* ===== Contact + Messages ===== */
+
 .contact { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
 .contact img { width: 100%; border-radius: 2px; }
 .messages-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
@@ -128,7 +120,6 @@ textarea { resize: vertical; }
 .message small { display: block; font-size: 12px; color: #6b6b6b; margin-bottom: 6px; }
 .message p { font-size: 14px; color: #444; }
 
-/* ===== Footer ===== */
 .footer { border-top: 1px solid #e6e6e6; margin-top: 40px; }
 .footer-inner {
   max-width: 1200px; margin: 0 auto; padding: 48px 40px;
@@ -141,7 +132,6 @@ textarea { resize: vertical; }
 .footer-col a { color: #6b6b6b; }
 .footer-col a:hover { text-decoration: underline; }
 
-/* ===== Responsive (للجوال والتابلت) ===== */
 @media (max-width: 900px) {
   .plants-grid, .messages-grid { grid-template-columns: repeat(2, 1fr); }
   .detail, .contact { grid-template-columns: 1fr; }
@@ -163,7 +153,6 @@ textarea { resize: vertical; }
 
 
 
-/* ===== تأثيرات تفاعلية ===== */
 .btn, button {
   transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
 }
@@ -189,13 +178,11 @@ input:focus, textarea:focus, select:focus {
 .message { transition: box-shadow 0.2s, transform 0.2s; }
 .message:hover { box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1); transform: translateY(-3px); }
 
-/* ===== أيقونات التواصل ===== */
 .footer-left { display: flex; flex-direction: column; justify-content: space-between; gap: 24px; }
 .social { display: flex; gap: 16px; }
 .social a { color: #6b6b6b; transition: color 0.2s, transform 0.2s; }
 .social a:hover { color: #111; transform: translateY(-3px); }
 
-/* ===== ظهور تدريجي ===== */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -207,7 +194,6 @@ input:focus, textarea:focus, select:focus {
 .plants-grid .card:nth-child(3) { animation-delay: 0.2s; }
 .plants-grid .card:nth-child(4) { animation-delay: 0.3s; }
 
-/* ===== خط متحرك تحت روابط الـ navbar ===== */
 .navbar nav a:not(.btn) { position: relative; }
 .navbar nav a:not(.btn):hover { text-decoration: none; }
 .navbar nav a:not(.btn)::after {
